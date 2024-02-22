@@ -1,0 +1,153 @@
+h1.title{
+    border-bottom: dotted gray 3px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: darkslateblue;
+}
+div.color1, div.color2, div.color3, div.color4, div.color5, div.color6{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+div.color1{
+    background-color: rgb(242, 80, 34);
+}
+div.color2{
+    background-color: rgb(127, 186, 0);
+}
+div.color3{
+    background-color: rgb(0, 164, 239);
+}
+div.color4{
+    background-color: rgb(255, 185, 0);
+}
+section.rgbcolors, section.hexcolors{
+    display: inline-block;
+    width: 100%;
+}
+div.color5{
+    background-color: #3355ff;
+}
+div.color6{
+    background-color: #ff8095;
+}
+section.container{
+    width: 80%;
+    position: relative;
+    margin: 2em auto;
+}
+img.img1{
+    width: 100%;
+}
+p.intro{
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    right: 10%;
+    left: 10%;
+    color: whitesmoke;
+    background-color:rgba(0, 164, 239, 0.6);
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: 2px 2px 10px white;
+}
+a.link{
+    display: block;
+    font-size: 0.6em;
+    background-color: #da44a8;
+    width: 30%;
+    margin: auto;
+    padding: 0.2em;
+    margin-top: 1em;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+}
+a.link:hover{
+    background-color: #a70965;
+    box-shadow: 0px 0px 10px 2px white;
+}
+img.img2{
+    width: 100%;
+}
+h2.containertitle, p.par1, p.par2, p.par3{
+    position: absolute;
+    color: rgb(17, 31, 158);
+}
+h2.containertitle{
+    text-align: center;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    font-size: 2.5em;
+}
+p.par1{
+    top: 5%;
+    left: 8%;
+    font-size: 1.2em;
+}
+p.par2{
+    bottom: 10%;
+    right: 2%;
+    font-size: 1.2em;
+}
+p.par3{
+    top: 30%;
+    right: 20%;
+    font-size: 1.2em;
+}
+img.sepia1, img.sepia2, img.sepia3{
+    width: 30%;
+    margin: 1%;
+}
+img.sepia1{
+    filter: sepia(10%);
+}
+img.sepia2{
+    filter: sepia(60%);
+}
+img.sepia3{
+    filter: sepia(100%);
+}
+img.blur1, img.blur2, img.blur3{
+    width: 30%;
+    margin: 1%;
+}
+img.blur1{
+    filter: blur(1px);
+}
+img.blur2{
+    filter: blur(5px);
+}
+img.blur3{
+    filter: blur(10px);
+}
+img.invert1, img.invert2, img.invert3{
+    width: 30%;
+    margin: 1%;
+}
+img.invert1{
+    filter: invert(10%);
+}
+img.invert2{
+    filter: invert(60%);
+}
+img.invert3{
+    filter: invert(100%);
+}
+
+/* ----- CLASS EXERCISE ---- * (image has filters, use sepia/
+section.container2{
+    display: inline-block;
+    width: 100%;
+}
+div.imgleft, div.imgmiddle, div.imgright{
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    float: left;
+}
+.containerimg1, .containerimg2, .containerimg3 {
+    width: 100%;
+}
