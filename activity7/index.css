@@ -136,8 +136,7 @@ img.invert2{
 img.invert3{
     filter: invert(100%);
 }
-
-/* ----- CLASS EXERCISE ---- * (image has filters, use sepia/
+/* ----- CLASS EXERCISE ----- */
 section.container2{
     display: inline-block;
     width: 100%;
@@ -148,6 +147,94 @@ div.imgleft, div.imgmiddle, div.imgright{
     margin: 1%;
     float: left;
 }
-.containerimg1, .containerimg2, .containerimg3 {
+img.containerimg1, img.containerimg2, img.containerimg3{
     width: 100%;
+}
+img.containerimg1{
+    filter: invert(90%);
+}
+div.description1{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(241, 196, 15, 0.8);
+    border: solid 2px #4c6bf3;
+    padding: 0.9em;
+    color: rgb(0, 0, 0);
+}
+p.dumbo{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+p.par4{
+    font-size: 0.9em;
+}
+img.containerimg2{
+    filter: blur(4px);
+}
+div.description2{
+    position: absolute;
+    top: 36%;
+    bottom: 36%;
+    left: 15%;
+    right: 15%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    text-align: left;
+    padding: 1em;
+    box-shadow: 2px 2px 10px white;
+}
+p.london{
+    font-size: 2em;
+    font-weight: bold;
+}
+p.par5{
+    font-size: 1.5em;
+}
+a.link2{
+    display: block;
+    font-size: 0.7em;
+    background-color: #1885b1;
+    width: 20%;
+    padding: 0.5em;
+    margin-top: 1.0em;
+    border-radius: 20px;
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    text-align: center;
+}
+a.link2:hover{
+    background-color: #2333c4;
+    box-shadow: 0px 0px 10px 2px white;
+}
+img.containerimg3{
+    filter: sepia(90%);
+}
+p.paris, p.text1, p.text2, p.text3{
+    position: absolute;
+    color: white;
+}
+p.paris{
+    font-size: 5em;
+    font-weight: bold;
+    top: 37%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+p.text1{
+    top: 5%;
+    right: 3%;
+    font-size: 1.2em;
+}
+p.text2{
+    bottom: 30%;
+    left: 2%;
+    font-size: 1.2em;
+}
+p.text3{
+    bottom: 6%;
+    right: 10%;
+    font-size: 1.2em;
 }
