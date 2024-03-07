@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Philippines by Kassandra Viason</title>
 </head>
-<body>
+<body id="home">
     <header class="top">
-            <h1 class="title">Philippines</h1>
+            <h1 class="philippines">Philippines</h1>
         <nav class="navbar">
             <a href="#home" class="tab1">Home</a>
             <a href="#about" class="tab2">About Philippines</a>
@@ -18,24 +18,57 @@
         </nav>
     </header>
 
-    <main id="home" class="main">
+    <main class="homedisplay">
         <img src="images/cebu.jpg" alt="an image of a beach in Cebu" class="cebu">
         <p class="slogan">Explore the enjoyable experiences waiting for you in the Philippines!</p>
     </main>
 
-    <section class="infocontainer" id="about">
-        <!--
-        <h1 class="question1">What is so special about the <span>Philippines</span>?</h1>
-            -->
-        <disv class="infoleft">
-            <img src="images/filipinos.png" alt="image of Filipinos in traditional outfits" class="filipinos">
-        </div>
+    <main id="about">
+    <h1 class="title1">What is so special about the Philippines?</h1>
+        <section class="infocontainer">
+            <div class="infoleft">
+                <img src="images/flag.png" alt="image of the flag of the philippines" class="flag">
+            </div>
 
-        <div class="inforight">
-            <p class="about">The Philippines, known as Asia's pearl of the orient for its cultural richness and breathtaking landscapes, is an archipelago of 7,100 islands. This Southeast Asian nation boasts centuries-old churches, turn-of-the-century mansions, ancient forts, and modern museums. With abundant natural resources, a rich history, and a unique culture, the Philippines stands out as one of the world's most enchanting tourist destinations.</p>
-            <a href="moreinfo.html" class="infolink">More Info</a>
-        </div>
-    </section>
+            <div class="inforight">
+                <p class="about">The Philippines, known as Asia's pearl of the orient for its cultural richness and breathtaking landscapes, is an archipelago of 7,100 islands. This Southeast Asian nation boasts centuries-old churches, turn-of-the-century mansions, ancient forts, and modern museums. With abundant natural resources, a rich history, and a unique culture, the Philippines stands out as one of the world's most enchanting tourist destinations.</p>
+            </div>
+        </section>
+    </main>
+
+    <main class="cardcontainer" id="places">
+    <h1 class="title2">Places To Visit</h1>
+        <a href="bgc.html" class="placelink">
+            <section class="card">
+                <img src="images/bgc.jpg" alt="" class="cardimg">
+                <div class="cardcontent">
+                    <h2>Bonifacio Global City</h2>
+                    <p>Taguig, Metro Manila</p>
+                </div>
+            </section>
+        </a>
+
+        <a href="elnido.html" class="placelink">
+            <section class="card">
+                <img src="images/el nido.jpg" alt="" class="cardimg">
+                <div class="cardcontent">
+                    <h2>El Nido</h2>
+                    <p>Palawan</p>
+                </div>
+            </section>
+        </a>
+
+        <a href="vigan.html" class="placelink">
+            <section class="card">
+                <img src="images/vigan.jpg" alt="" class="cardimg">
+                <div class="cardcontent">
+                    <h2>Vigan City</h2>
+                    <p>Ilocos Sur</p>
+                </div>
+            </section>
+        </a>
+    </main>
 
 </body>
 </html>
+
