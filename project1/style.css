@@ -101,7 +101,7 @@ div.infoleft, div.inforight{
 }
 
 div.inforight{
-    padding: 1em;
+    padding: 0.8em;
 }
 
 img.flag{
@@ -114,6 +114,18 @@ p.about{
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     text-align: justify;
+}
+/* ---  2nd ---*/
+
+div.infoleft2, div.inforight2{
+    width: 50%;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.infoleft2{
+
 }
 
 main.cardcontainer{
