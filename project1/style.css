@@ -507,6 +507,16 @@ p.placedescription{
     text-align: justify;
 }
 
+/* ---- BREAKPOINT = 1520 PX----*/
+@media only screen and (max-width:1520px){
+    div.card{width: 30%; height: 90%;}
+    p.slogan{font-size: 1.5em;}
+    div.mainpic{width: 1520px;}
+    p.placeinfo{font-size: 18px; margin-top: -25px;}
+    h1.activities{font-size: 40px;}
+    img.pic1, img.pic2, img.pic3{width: 30%;}
+}
+
 /* ---- BREAKPOINT = 1246 PX----*/
 @media only screen and (max-width:1246px){
     div.card{width: 30%; height: 320px;}
@@ -514,6 +524,7 @@ p.placedescription{
     div.mainpic{width: 1246px;}
     p.placeinfo{font-size: 18px; margin-top: -25px;}
     h1.activities{font-size: 40px;}
+    img.pic1, img.pic2, img.pic3{width: 30%;}
 }
 
 /* ---- BREAKPOINT = 1130 PX----*/
