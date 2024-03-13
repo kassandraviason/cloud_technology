@@ -257,7 +257,7 @@ table.center{
     margin: auto;
     font-family: "Poppins", sans-serif;
     background-color: rgb(85, 99, 226);
-    border-radius: 0.25em;
+    border-radius: 12px;
     border-collapse: collapse;
     margin: 1em;
     margin-bottom: 3%;
