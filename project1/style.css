@@ -440,8 +440,7 @@ h1.headtitle{
 }
 
 div.mainpic {
-    width: 1520px;
-    height: 400px;
+    width: 100%;
     margin: 0px 0;
     overflow: hidden;
 }
@@ -460,9 +459,11 @@ img.elnidomainpic{
 img.viganmainpic{
     width: 100%;
     margin-top: -30%;
-    margin-bottom: -30px;
-}
 
+}
+section.vigansection1{
+    height: auto;
+}
 p.placeinfo{
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -511,8 +512,7 @@ p.placedescription{
 @media only screen and (max-width:1520px){
     div.card{width: 30%; height: 90%;}
     p.slogan{font-size: 1.5em;}
-    div.mainpic{width: 1520px;}
-    p.placeinfo{font-size: 18px; margin-top: -25px;}
+    p.placeinfo{font-size: 18px; }
     h1.activities{font-size: 40px;}
     img.pic1, img.pic2, img.pic3{width: 30%;}
 }
@@ -521,8 +521,6 @@ p.placedescription{
 @media only screen and (max-width:1246px){
     div.card{width: 30%; height: 320px;}
     p.slogan{font-size: 1.5em;}
-    div.mainpic{width: 1246px;}
-    p.placeinfo{font-size: 18px; margin-top: -25px;}
     h1.activities{font-size: 40px;}
     img.pic1, img.pic2, img.pic3{width: 30%;}
 }
@@ -537,10 +535,9 @@ p.placedescription{
     div.card{width: 30%; height: 320px;}
     p.slogan{font-size: 1.5em;}
     h1.headtitle{font-size: 35px;}
-    div.mainpic{width: 911px;}
-    p.placeinfo{font-size: 15px; margin-top: -120px;}
+    p.placeinfo{font-size: 15px; }
     h1.activities{font-size: 35px;}
-    img.pic1, img.pic2, img.pic3{width: 28%;}
+    img.pic1, img.pic2, img.pic3{width: 34%; margin: 0em;}
     li.placelist{font-size: 18px;}
     p.placedescription{font-size: 14px;}
 }
@@ -551,10 +548,9 @@ p.placedescription{
     h1.philippines{font-size: 1.5em;}
     p.slogan{font-size: 1.2em;}
     h1.headtitle{font-size: 30px;}
-    div.mainpic {width: 768px;}
-    p.placeinfo{font-size: 15px; margin-top: -160px;}
+    p.placeinfo{font-size: 15px;}
     h1.activities{font-size: 30px;}
-    img.pic1, img.pic2, img.pic3{width: 27%;}
+    img.pic1, img.pic2, img.pic3{width: 70%; margin: 1em auto; display: block;}
     li.placelist{font-size: 16px;}
     p.placedescription{font-size: 12px;}
 
@@ -562,7 +558,7 @@ p.placedescription{
 
 /* ---- BREAKPOINT = 595 PX----*/
 @media only screen and (max-width:595px){
-    img.pic1, img.pic2, img.pic3{width: 26%;}
+
 }
 
 /* ---- BREAKPOINT = 555 PX----*/
@@ -571,8 +567,7 @@ p.placedescription{
     h1.philippines{font-size: 1em;}
     p.slogan{font-size: 1em;}
     h1.headtitle{font-size: 20px;}
-    div.mainpic {width: 555px;}
-    p.placeinfo{font-size: 12px; margin-top: -220px;}
+    p.placeinfo{font-size: 12px; }
     h1.activities{font-size: 25px;}
     img.pic1, img.pic2, img.pic3{width: 24%;}
     li.placelist{font-size: 14px;}
