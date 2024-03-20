@@ -531,12 +531,12 @@ p.placedescription{
     div.card{width: 30%; height: 320px;}
     p.slogan{font-size: 1.5em;}
     h1.activities{font-size: 40px;}
-    img.pic1, img.pic2, img.pic3{width: 30%;}
+    img.pic1, img.pic2, img.pic3{width: 70%; margin: 3em auto; display: block;}
 }
 
 /* ---- BREAKPOINT = 1130 PX----*/
 @media only screen and (max-width:1130px){
-    img.pic1, img.pic2, img.pic3{width: 29%;}
+    img.pic1, img.pic2, img.pic3{width: 50%; margin: 2.5em auto; display: block;}
 }
 
 /* ---- BREAKPOINT = 911 PX----*/
@@ -546,7 +546,7 @@ p.placedescription{
     h1.headtitle{font-size: 35px;}
     p.placeinfo{font-size: 15px; }
     h1.activities{font-size: 35px;}
-    img.pic1, img.pic2, img.pic3{width: 34%; margin: 0em;}
+    img.pic1, img.pic2, img.pic3{width: 40%; margin: 1.5em auto; display: block;}
     li.placelist{font-size: 18px;}
     p.placedescription{font-size: 14px;}
 }
@@ -559,16 +559,12 @@ p.placedescription{
     h1.headtitle{font-size: 30px;}
     p.placeinfo{font-size: 15px;}
     h1.activities{font-size: 30px;}
-    img.pic1, img.pic2, img.pic3{width: 70%; margin: 1em auto; display: block;}
+    img.pic1, img.pic2, img.pic3{width: 35%; margin: 1em auto; display: block; border: dashed royalblue 8px;}
     li.placelist{font-size: 16px;}
     p.placedescription{font-size: 12px;}
-
+    section.events{margin:3em auto;}
 }
 
-/* ---- BREAKPOINT = 595 PX----*/
-@media only screen and (max-width:595px){
-
-}
 
 /* ---- BREAKPOINT = 555 PX----*/
 @media only screen and (max-width:555px){
@@ -578,14 +574,15 @@ p.placedescription{
     h1.headtitle{font-size: 20px;}
     p.placeinfo{font-size: 12px; }
     h1.activities{font-size: 25px;}
-    img.pic1, img.pic2, img.pic3{width: 24%;}
+    img.pic1, img.pic2, img.pic3{width: 30%; margin: 0.8em auto; display: block; border: dashed royalblue 5px;}
     li.placelist{font-size: 14px;}
     p.placedescription{font-size: 10px;}
 }
 
-/* ---- BREAKPOINT = 404 PX----*/
-@media only screen and (max-width:404px){
-    img.pic1, img.pic2, img.pic3{width: 15%;}
+/* ---- BREAKPOINT = 410 PX----*/
+@media only screen and (max-width:410px){
+    img.pic1, img.pic2, img.pic3{width: 20%; margin: 0.8em auto; display: block; border: dashed royalblue 2px;}
+    section.events{margin:3em auto;}
 }
 
 
