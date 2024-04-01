@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms by Kassandra Viason</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="bg-info p-3 text-center">Forms by Kassandra Viason</h1>
+    <form action="thankyou.html" method="post" class="mt-5 mx-auto" style="width: 700px;">
+      <legend class="bg-warning p-2 text-center rounded mb-5">
+        <p>input control</p>
+      </legend>
+
+      <!-- EMAIL -->
+      <div class="mb-5">
+        <label for="emailInput" class="form-label">Email address:</label>
+        <input type="email" id="emailInput" placeholder="name@example.com..." class="form-control">
+        <label for="inputpassword">Password:</label>
+        <input type="password" id="inputpassword" class="form-control" aria-describedby="passwordHelpBlock">
+        <div class="form-text" id="passwordHelpBlock">
+          <p>Your password must be 8 to 20 characters long</p>
+        </div>
+      </div>
+
+      <!-- COLOR -->
+      <div class="mb-5">
+        <label for="colorInput">Pick a color</label>
+        <input type="color" id="colorInput" class="form-control form-control-color" value="#AA55BB" title="Choose your color">
+      </div>
+
+      <!-- DATALIST -->
+      <div class="mb-5">
+        <label for="datalist">Datalist example</label>
+        <input class="form-control" list="datalistoptions" placeholder="Click to select a city..." id="datalist">
+        <datalist id="datalistoptions">
+            <option value="San Francisco"></option>
+            <option value="New York"></option>
+            <option value="Seattle"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+        </datalist>
+      </div>
+        <!-- CHECKBOX -->
+        <div class="mb-5">
+          <p>Which day you don't want to go to school</p>
+          <div class="form-check">
+            <label for="checkDefault" class="form-check-label">Monday</label>
+            <input type="checkbox" id="checkDefault" class="form-check-input">
+          </div>
+          <div class="form-check">
+            <label for="checkTuesday" class="form-check-label">Tuesday</label>
+            <input type="checkbox" id="checkTuesday" class="form-check-input">
+          </div>
+          <div class="form-check">
+            <label for="checkWednesday" class="form-check-label">Wednesday</label>
+            <input type="checkbox" id="checkWednesday" class="form-check-input">
+          </div>
+          <div class="form-check">
+            <label for="checkThursday" class="form-checsk-label">Thursday</label>
+            <input type="checkbox" id="checkThursday" class="form-check-input" checked>
+          </div>
+          <div class="form-check">
+            <label for="checkFriday" class="form-check-label">Friday</label>
+            <input type="checkbox" id="checkFriday" class="form-check-input" checked>
+          </div>
+        </div>
+
+      <!-- RADIO -->
+      <div class="mb-5">
+        <p>Gender:</p>
+        <div class="form-check">
+          <label for="genderFemale" class="form-check-label">Female</label>
+          <input type="radio" class="form-check-input" id="genderFemale">
+        </div>
+        <div class="form-check">
+          <label for="genderMale" class="form-check-label">Male</label>
+          <input type="radio" class="form-check-input" id="genderMale">
+        </div>
+        <div class="form-check">
+          <label for="genderOther" class="form-check-label">Other</label>
+          <input type="radio" class="form-check-input" id="genderOther">
+        </div>
+      </div>
+
+      <!-- SWITCH USING CHECKBOX -->
+      <div class="mb-5">
+        <div class="form-check form-switch">
+          <label for="switchcheck" class="form-check-label">Default switch checkbox</label>
+          <input type="checkbox" id="switchcheck" role="switch" class="form-check-input">
+        </div>
+        <div class="form-check form-switch">
+          <label for="switchchecked" class="form-check-label">checked switch</label>
+          <input type="checkbox" id="switchchecked" role="switch" class="form-check-input" checked>
+        </div>
+        <div class="form-check form-switch">
+          <label for="switchdisabled" class="form-check-label">Disabled switch</label>
+          <input type="checkbox" id="switchdisabled" role="switch" class="form-check-input" disabled>
+        </div>
+        <div class="form-check form-switch">
+          <label for="switchCheckedDisabled" class="form-check-label">Checked and Disabled switch</label>
+          <input type="checkbox" id="switchCheckedDisabled" role="switch" class="form-check-input" disabled checked>
+        </div>
+
+        <!-- DATE -->
+        <div class="mb-5">
+          <label for="appointment" class="form-label">Appointment Date:</label>
+          <input type="date" id="appointment">
+        </div>
+
+        <!-- SELECT -->
+        <legend class="bg-warning p-2 text-center rounded mb-5">
+          <p>select control</p>
+        </legend>
+
+        <div class="mb-5">
+          <p>Quantity</p>
+          <select class="form-select">
+            <option value="0">Zero</option>
+            <option value="1">One</option>
+            <option value="2" selected>Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="mb-5">
+          <p>Which is/are your favorite food?</p>
+          <select class="form-select" multiple size="3">
+            <option value="pizza">Pizza</option>
+            <option value="chicken">Fried Chicken</option>
+            <option value="sandwich">Sandwich</option>
+            <option value="pasta">Pasta</option>
+            <option value="salad">Salad</option>
+          </select>
+        </div>
+
+        <!-- TEXT AREA -->
+        <div class="mb-5">
+          <legend class="bg-warning p-3 rounded text-center">
+            textarea
+          </legend>
+          <textarea cols="30" rows="10" class="form-control" placeholder="Comments..." maxlength="200" id="commentsArea"></textarea>
+          <p class="form-text">Max. 200 characters</p>
+        </div>
+
+        <!-- BUTTON -->
+        <button type="submit" class="btn btn-danger mb-5">SUBMIT FORM</button>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
