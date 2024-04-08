@@ -5,9 +5,15 @@ html{scroll-behavior: smooth;}
     --primarydark:  rgb(0,44,193);
     --primarylight: rgb(210,220,255);
 }
-h1{
+nav.navbar{
     background-color: var(--primarylight);
     text-align: center;
     padding: 1em;
     color: var(--primarydark);
 }
+h2.carousel-caption1 {
+   color:var(--primarylight);  
+}
+p.carousel-caption2 {
+    color: white;  
+ }
