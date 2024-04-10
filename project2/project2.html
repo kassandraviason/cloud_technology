@@ -13,74 +13,762 @@
             <a class="navbar-brand fw-bold" style="text-decoration: none; color: var(--primarydark);" href="#home">Gentle Monster</a>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <button class="search btn custom-btn text-light d-block" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                 </svg></button>
             </form>
         </div>
     </nav>
 
-    <main id="home" style="width: 900px; height:500px; margin: auto; overflow: hidden;">
+    <main id="home" class="w-100 m-auto overflow-hidden">
       <section class="carousel carousel-dark slide mb-6" data-bs-ride="carousel" id="myCarousel">
           <div class="carousel-inner">
             <!--SLIDE 1-->
             <div class="carousel-item active">
-                <img src="images/carousel/intropic.jpg" width="100%" style="height: 100%; display: block;" alt="image of Gentle Monster 2020" >
+                <img src="images/carousel/intropic.jpg" class="w-100 d-block" alt="image of Gentle Monster 2020" >
                 <div class="carousel-caption" style="background-color: rgba(20, 20, 20, 0.6);">
-                    <h1 class="text-primary">Welcome to Gentle Monster</h1>
+                    <h1 style="color: var(--primarycolor);">Welcome to Gentle Monster</h1>
                 </div>
             </div>
             <!--SLIDE 2-->
             <div class="carousel-item">
-                <img src="images/carousel/maisonmargiela.png" width="100%" style="height: 100%; display: block;"
-                    alt="image of Gentle Monster x Maison Margiela collab">
+                <img src="images/carousel/maisonmargiela.png" class="w-100 d-block" alt="image of Gentle Monster x Maison Margiela collab">
                 <div class="carousel-caption" style="background-color: rgba(20, 20, 20, 0.6);">
                     <h2 class="carousel-caption1">Gentle Monster x Maison Margiela</h2>
-                    <p class="carousel-caption2">Introducing the second collaborative sunglasses by Gentle Monster and Maison Margiela. Designed
-                        with technology and aesthetics at its core; the templeless mask-shaped pieces, delicately
-                        handcrafted leather frames and the iconic stitches on the temples. An invitation to a collection
-                        embodying a new era.</p>
+                    <p class="carousel-caption2">Presenting a collaborative collection with Maison Margiela, reflecting a new era.</p>
                 </div>
             </div>
             <!-- SLIDE 3 -->
             <div class="carousel-item">
-                <img src="images/carousel/gmspring24.PNG" width="100%" style="height: 100%; display: block;"
-                    alt="image of Gentle Monster 2022 Collection">
+                <img src="images/carousel/gmspring24.PNG" class="w-100 d-block" alt="image of Gentle Monster 2022 Collection">
                 <div class="carousel-caption" style="background-color: rgba(20, 20, 20, 0.6);">
                     <h2 class="carousel-caption1">2024 Collection</h2>
-                    <p class="carousel-caption2">Gentle Monster presents its 2024 eyewear collection. Explore new style elements including an
-                        assortment of ‘jelly’ details, sleek wrap-around silhouettes, and an expanded spectrum of
-                        colorways that enhance Gentle Monster’s innovative design identity. Provoke your imagination
-                        through the iconic aesthetics of the 2024 collection.</p>
+                    <p class="carousel-caption2">The 2024 ‘GENTLE JELLY’ campaign reveals a daring line of eyewear that whimsically captures unique characteristics of jelly. Discover the unmatched level of detail in this bold campaign.</p>
                 </div>
             </div>
             <!-- SLIDE 4 -->
             <div class="carousel-item">
-                <img src="images/carousel/opticalver.png" width="100%" style="height: 100%; display: block;"
-                    alt="image of Gentle Monster Optical Glasses">
+                <img src="images/carousel/opticalver.png" class="w-100 d-block" alt="image of Gentle Monster Optical Glasses">
                 <div class="carousel-caption" style="background-color: rgba(20, 20, 20, 0.6);">
                     <h2 class="carousel-caption1">2024 OPTICAL COLLECTION</h2>
-                    <p class="carousel-caption2">The 2024 Optical Collection presents a new direction for optical frames, combining bold and sophisticated metal elements as well as tinted lenses of various shades. Discover the 2024 Optical Collection with bold and forward-looking designs.</p>
+                    <p class="carousel-caption2">Gentle Monster presents the 2024 Optical Collection. Experience the unique line of eyewear, highlighted by bold and sophisticated metal detailing, through our ‘GENTLE HIGH SCHOOL’ themed campaign and unconventional pop-up spaces.</p>
                 </div>
             </div>
         </div>
-          <!--LEFT AND RIGHT BUTTONS (CONTROLS)-->
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-          <!--CAROUSEL INDICATORS-->
-          <div class="carousel-indicators color" style="filter: invert(100);">
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-          </div>
+        <!--LEFT AND RIGHT BUTTONS (CONTROLS)-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        <!--CAROUSEL INDICATORS-->
+        <div class="carousel-indicators color" style="filter: invert(100);">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+        </div>
       </section>
   </main>
+
+  <section class="container mb-5">
+    <div class="row mt-5">
+        <div class="col-xl-6 text-center justify-content-start">
+            <p class="campaigntitle fs-1 fw-bold">Maison Margiela x Gentle Monster Sunglasses</p>
+            <p class="fw-medium">Worldwide Launch on March 7th</p>
+            <p>Introducing the second collaborative sunglasses by Gentle Monster and Maison Margiela. Designed with technology and aesthetics at its core; the templeless mask-shaped pieces, delicately handcrafted leather frames and the iconic stitches on the temples. An invitation to a collection embodying a new era.</p>
+        </div>
+        <div class="col-xl-6">
+            <a href="https://www.gentlemonster.com/us/shop/list/sunglasses/maison-margiela" target="_blank" rel="noopener noreferrer">
+                <img src="images/featurettes/intro-campaign-item08-pc.avif" class="gmcampaign w-100 rounded-5" alt="image of featuretteimg1">
+            </a>
+        </div>
+    </div>
+  </section>
+
+  <section class="container-fluid mb-5">
+    <div class="row justify-content-center mx-6">
+        <!--ITEM 1-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/maison/11001_MM110_01_1_1.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Maison Margiela - MM110 01</p>
+                <p class="fw-medium text-success card-text">USD$ 370</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item1" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 2-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/maison/11001_MM108_W2_1_1.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Maison Margiela - MM108 W2</p>
+                <p class="fw-medium text-success card-text">USD$ 380</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item2" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 3-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/maison/11001_MM107_LEATHER_LK11_1_1.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Maison Margiela - MM107 Leather LK1</p>
+                <p class="fw-medium text-success card-text">USD$ 450</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item3" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 4-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/maison/11001_MM103_01_BL__1_2.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Maison Margiela - MM103 01(BL)</p>
+                <p class="fw-medium text-success card-text">USD$ 480</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item4" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+    </div> 
+  </section>
+  
+   <!-- MODAL WINDOW FOR ITEM 1 -->
+   <section class="modal fade" id="item1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/maison/11001_MM110_01_1_1.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Maison Margiela - MM110 01</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Black acetate frame</li>
+                            <li>Black lenses</li>
+                            <li>Square shape</li>
+                            <li>Four stitches on the sides of the temples in a nod to Maison Margiela's iconic detail</li>
+                            <li>Frame Front: 145mm, Frame Side: 145mm
+                            Lens Width: 52.1mm, Lens Height: 39.4mm
+                            Bridge: 21mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$370</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- MODAL WINDOW FOR ITEM 2 -->
+   <section class="modal fade" id="item2">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/maison/11001_MM108_W2_1_1.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Maison Margiela - MM108 W2</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>White acetate frame</li>
+                            <li>Black lenses</li>
+                            <li>Cat-eye shape</li>
+                            <li>Four stitches on the sides of the temples in a nod to Maison Margiela's iconic detail</li>
+                            <li>Frame Front: 149.2mm, Frame Side: 145mm
+                                Lens Width: 54.8mm, Lens Height: 34.8mm
+                                Bridge: 21mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$380</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- MODAL WINDOW FOR ITEM 3 -->
+   <section class="modal fade" id="item3">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/maison/11001_MM107_LEATHER_LK11_1_1.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Maison Margiela - MM107 Leather LK1</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Khaki leather acetate frame</li>
+                            <li>Black lenses</li>
+                            <li>Oval shape</li>
+                            <li>Four stitches on the sides of the temples in a nod to Maison Margiela's iconic detail</li>
+                            <li>Frame Front: 147.7mm, Frame Side: 145.3mm
+                                Lens Width: 53.2mm, Lens Height: 34.5mm
+                                Bridge: 21mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$450</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 4 -->
+    <section class="modal fade" id="item4">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/maison/11001_MM103_01_BL__1_2.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Maison Margiela - MM103 01(BL)</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Blue frame</li>
+                            <li>Blue mirror lenses</li>
+                            <li>Goggle shape</li>
+                            <li>Frame Front: 144.7mm, Frame Side: 122.7mm
+                                Lens Width: 140.9mm, Lens Height: 44.2mm
+                                Bridge: 0mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$480</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <hr class="mt-10">
+  <section class="container mb-5">
+    <div class="row mt-5">
+        <div class="col-xl-6">
+            <a href="https://www.gentlemonster.com/us/shop/list/sunglasses/2024-collection" target="_blank" rel="noopener noreferrer">
+                <img src="images/featurettes/campaign_pc_3.avif" class="gmcampaign w-100 rounded-5" alt="image of featuretteimg2">
+            </a>
+            
+        </div>
+        <div class="col-xl-6 text-center justify-content-start">
+            <p class="campaigntitle fs-1 fw-bold">2024 COLLECTION</p>
+            <p>Gentle Monster presents its 2024 eyewear collection. Explore new style elements including an assortment of ‘jelly’ details, sleek wrap-around silhouettes, and an expanded spectrum of colorways that enhance Gentle Monster’s innovative design identity. Provoke your imagination through the iconic aesthetics of the 2024 collection.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="container-fluid mb-5">
+    <div class="row justify-content-center mx-6">
+        <!--ITEM 5-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/2024/11001_LIN_V3_2.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Lin V3</p>
+                <p class="fw-medium text-success card-text">USD$ 305</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item5" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 6-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/2024/11001_VOID-KC6-2_1.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Void KC6</p>
+                <p class="fw-medium text-success card-text">USD$ 325</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item6" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 7-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/2024/11001_NOVA-01BM_-2.avif" class="w-100 d-bloc rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Nova 01(BM)</p>
+                <p class="fw-medium text-success card-text">USD$ 340</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item7" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+        <!--ITEM 8-->
+        <div class="col-xl-2 col-md-6 col-sm-10">
+            <div class="card-img">
+                <img src="images/sunglasses/2024/11001_GUMMY-PC12-2_1.avif" class="w-100 d-block rounded-3">
+            </div>
+            <div class="card-body">
+                <p class="h6 card-title">Gummy PC12</p>
+                <p class="fw-medium text-success card-text">USD$ 360</p>
+            </div>
+            <div class="card-footer">
+                <a href="#item8" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+            </div>
+        </div>
+    </div> 
+  </section>
+
+    <!-- MODAL WINDOW FOR ITEM 5 -->
+    <section class="modal fade" id="item5">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/2024/11001_LIN_V3_2.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Lin V3</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Violet acetate frame</li>
+                            <li>Navy lenses</li>
+                            <li>Square shape</li>
+                            <li>Iconic metal detail on the temples</li>
+                            <li>Frame Front: 145.5mm, Frame Side: 144.4mm
+                                Lens Width: 54mm, Lens Height: 36.2mm
+                                Bridge: 21mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$305</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 6 -->
+    <section class="modal fade" id="item6">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/2024/11001_VOID-KC6-2_1.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Void KC6</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Translucent khaki acetate frame</li>
+                            <li>Brown lenses</li>
+                            <li>Square shape</li>
+                            <li>Iconic metal detail on the temples</li>
+                            <li>Frame Front: 145.7mm, Frame Side: 145.3mm
+                                Lens Width: 52.6mm, Lens Height: 33.6mm
+                                Bridge: 21mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$325</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 7 -->
+    <section class="modal fade" id="item7">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/2024/11001_NOVA-01BM_-2.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Nova 01(BM)</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Black acetate frame</li>
+                            <li>Clear mirror lenses</li>
+                            <li>Goggle shape</li>
+                            <li>Iconic metal detail on the temples</li>
+                            <li>Frame Front: 151.5mm, Frame Side: 141.6mm
+                                Lens Width: 59.8mm, Lens Height: 33.2mm
+                                Bridge: 20mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$340</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 8 -->
+    <section class="modal fade" id="item8">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/sunglasses/2024/11001_GUMMY-PC12-2_1.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Gummy PC12</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Translucent pink TR frame</li>
+                            <li>Gray mirror lenses</li>
+                            <li>Goggle shape</li>
+                            <li>Jelly sweets detail on the temples</li>
+                            <li>Frame Front: 152mm, Frame Side: 127.2mm
+                                Lens Width: 65.6mm, Lens Height: 36.8mm
+                                Bridge: 17mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$360</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="mt-10">
+    <section class="container mb-5">
+        <div class="row mt-5">
+            <div class="col-xl-6 text-center justify-content-start">
+                <p class="campaigntitle fs-1 fw-bold">2024 OPTICAL COLLECTION</p>
+                <p>The 2024 Optical Collection presents a new direction for optical frames, combining bold and sophisticated metal elements as well as tinted lenses of various shades. Discover the 2024 Optical Collection with bold and forward-looking designs.</p>
+            </div>
+            <div class="col-xl-6">
+                <a href="https://www.gentlemonster.com/us/shop/list/glasses/24-optical" target="_blank" rel="noopener noreferrer">
+                    <img src="images/featurettes/optical-campaign-image-1.avif" class="gmcampaign w-100 rounded-5" alt="image of featuretteimg2">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mb-5">
+        <div class="row justify-content-center mx-6">
+            <!--ITEM 9-->
+            <div class="col-xl-2 col-md-6 col-sm-10">
+                <div class="card-img">
+                    <img src="images/optical/optical-product-7.avif" class="w-100 d-block">
+                </div>
+                <div class="card-body">
+                    <p class="h6 card-title">Vonzo 01</p>
+                    <p class="fw-medium text-success card-text">USD$ 320</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#item9" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+                </div>
+            </div>
+            <!--ITEM 10-->
+            <div class="col-xl-2 col-md-6 col-sm-10">
+                <div class="card-img">
+                    <img src="images/optical/optical-product-2.avif" class="w-100 d-block">
+                </div>
+                <div class="card-body">
+                    <p class="h6 card-title">Paradoxx R4</p>
+                    <p class="fw-medium text-success card-text">USD$ 380</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#item10" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+                </div>
+            </div>
+            
+            <!--ITEM 11-->
+            <div class="col-xl-2 col-md-6 col-sm-10">
+                <div class="card-img">
+                    <img src="images/optical/optical-product-6.avif" class="w-100 d-block">
+                </div>
+                <div class="card-body">
+                    <p class="h6 card-title">Atomic 02(B)</p>
+                    <p class="fw-medium text-success card-text">USD$ 360</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#item11" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+                </div>
+            </div>
+
+            <!--ITEM 12-->
+            <div class="col-xl-2 col-md-6 col-sm-10">
+                <div class="card-img">
+                    <img src="images/optical/optical-product-4.avif" class="w-100 d-block">
+                </div>
+                <div class="card-body">
+                    <p class="h6 card-title">Third Kind Y8</p>
+                    <p class="fw-medium text-success card-text">USD$ 400</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#item12" class="btn custom-btn text-light d-block" data-bs-toggle="modal">ADD TO CART</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 9 -->
+    <section class="modal fade" id="item9">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/optical/optical-product-7.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Vonzo 01</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Black acetate frame</li>
+                            <li>Clear lenses</li>
+                            <li>Square shape</li>
+                            <li>Temples featuring the BOLD Collection's signature symbol</li>
+                            <li>Blue-light-blocking lenses</li>
+                            <li>Frame Front: 140.2mm, Frame Side: 147mm
+                                Lens Width: 46.2mm, Lens Height: 39.1mm
+                                Bridge: 23mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$320</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 10 -->
+    <section class="modal fade" id="item10">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/optical/optical-product-2.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Paradoxx R4</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Red acetate frame</li>
+                            <li>Blue lenses</li>
+                            <li>Goggle shape</li>
+                            <li>Temples featuring the BOLD Collection's signature symbol</li>
+                            <li>Blue-light-blocking lenses</li>
+                            <li>Frame Front: 147.9mm, Frame Side: 136.8mm
+                                Lens Width: 58mm, Lens Height: 36.9mm
+                                Bridge: 18mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$380</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 11 -->
+    <section class="modal fade" id="item11">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/optical/optical-product-6.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Atomic 02(B)</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Silver metal frame</li>
+                            <li>Blue lenses</li>
+                            <li>Square shape</li>
+                            <li>Temples featuring the BOLD Collection's signature symbol</li>
+                            <li>Blue-light-blocking lenses</li>
+                            <li>Frame Front: 149.6mm, Frame Side: 151mm
+                                Lens Width: 55.7mm, Lens Height: 35.9mm
+                                Bridge: 17mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$360</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL WINDOW FOR ITEM 12 -->
+    <section class="modal fade" id="item12">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="h5 modal-title">ADDED TO CART</p>
+                    <button type="button" class="btn custom-btn text-light d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-5">
+                        <img src="images/optical/optical-product-4.avif" class="d-block w-100 p-3">
+                    </div>
+                    <div class="col-6">
+                        <p class="h5 fw-bold">Third Kind Y8</p>
+                        <p class="h6 text-secondary pt-2">Product Details</p>
+                        <ul class="text-secondary small">
+                            <li>Yellow acetate frame</li>
+                            <li>Clear lenses</li>
+                            <li>Goggle shape</li>
+                            <li>Temples featuring the BOLD Collection's signature symbol</li>
+                            <li>Blue-light-blocking lenses</li>
+                            <li>Frame Front: 160.9mm, Frame Side: 110mm
+                                Lens Width: 79.2mm, Lens Height: 40.9mm
+                                Bridge: 15mm</li>
+                            <li>Manufacturer & Importer: IICOMBINED CO., LTD.</li>
+                            <li>Country of Manufacturer: China</li>
+                        </ul>
+                        <p class="mt-4 h4 text-success">$400</p>
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-evenly">
+                    <button class="btn btn-dark col-4 m-3" data-bs-dismiss="modal">CONTINUE SHOPPING</button>
+                    <button class="btn btn-success text-light col-4 m-3">VIEW BAG AND CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="mt-10">
+
+    <div class="container">
+       <footer class="py-5">
+            <div class="row">
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+       </footer>
+    </div>
     
+     <!--
+        <footer>
+            <img src="images/logo/gentlemonsterlogo.svg" class="logo" width="200px" height="200px" alt="image of gentle monster logo">
+        </footer>
+        -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

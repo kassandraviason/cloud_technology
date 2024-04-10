@@ -1,19 +1,72 @@
 *{box-sizing: border-box;}
 html{scroll-behavior: smooth;}
 :root{
-    --primarycolor: rgb(62,105,255);
-    --primarydark:  rgb(0,44,193);
-    --primarylight: rgb(210,220,255);
+    --primarycolor: rgb(4,111,227);
+    --primarylight: rgb(132, 178, 228);
+    --primarydark:  rgb(4, 89, 180);   
 }
 nav.navbar{
     background-color: var(--primarylight);
     text-align: center;
     padding: 1em;
-    color: var(--primarydark);
+}
+button.search{
+    background-color: var(--primarycolor);
+    color: var(--primarydark); 
+}
+button.search:hover{
+    background-color: var(--primarydark);
+    color: var(--primarycolor);
+}
+div.carousel-inner{
+    margin-top: -4%;
 }
 h2.carousel-caption1 {
    color:var(--primarylight);  
 }
 p.carousel-caption2 {
     color: white;  
- }
+}
+
+p.campaigntitle{
+    color: var(--primarycolor);
+}
+
+img.gmcampaign {
+    transition: 300ms;
+}
+
+img.gmcampaign:hover {
+    transform: scale(1.05);
+}
+
+a.custom-btn {
+    margin-bottom: 5%;
+    background-color: var(--primarydark);
+    color: var(--primarycolor);
+}
+
+a.custom-btn:hover {
+    background-color: var(--primarycolor);
+    color: var(--primarydark);
+}
+
+p.card-title{
+    text-align: center;
+    margin-top: 3%;
+}
+p.card-text{
+    text-align: center;
+}
+
+div.card-footer{
+    margin-top: 7%;
+}
+
+img.logo{
+    color: green;
+}
+
+h1.sectitle{
+    color: var(--primarydark);
+}
