@@ -10,12 +10,29 @@ nav.navbar{
     text-align: center;
     padding: 1em;
 }
-button.search{
-    background-color: var(--primarycolor);
-    color: var(--primarydark); 
+div.offcanvas-body ul li {
+    list-style: none;
+    margin-bottom: 30px; 
 }
-button.search:hover{
-    background-color: var(--primarydark);
+div.offcanvas-body ul li {
+    list-style: none;
+    margin-bottom: 30px; 
+}
+div.offcanvas-body ul li:last-child {
+    margin-bottom: 0;
+}
+div.offcanvas-body ul li a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    transition: 300ms;
+}
+div.offcanvas-body ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.2);
     color: var(--primarycolor);
 }
 div.carousel-inner{
@@ -27,30 +44,24 @@ h2.carousel-caption1 {
 p.carousel-caption2 {
     color: white;  
 }
-
 p.campaigntitle{
     color: var(--primarycolor);
 }
-
 img.gmcampaign {
     transition: 300ms;
 }
-
 img.gmcampaign:hover {
     transform: scale(1.05);
 }
-
 a.custom-btn {
     margin-bottom: 5%;
     background-color: var(--primarydark);
     color: var(--primarycolor);
 }
-
 a.custom-btn:hover {
     background-color: var(--primarycolor);
     color: var(--primarydark);
 }
-
 p.card-title{
     text-align: center;
     margin-top: 3%;
@@ -58,15 +69,20 @@ p.card-title{
 p.card-text{
     text-align: center;
 }
-
 div.card-footer{
     margin-top: 7%;
 }
-
 img.logo{
     color: green;
 }
-
 h1.sectitle{
     color: var(--primarydark);
+}
+button.subscribe {
+    background-color: var(--primarydark);
+    color: white;
+}
+button.subscribe:hover {
+    background-color: var(--primarycolor);
+    color: white;
 }
