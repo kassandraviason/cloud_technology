@@ -5,6 +5,14 @@ html{scroll-behavior: smooth;}
     --primarylight: rgb(132, 178, 228);
     --primarydark:  rgb(4, 89, 180);   
 }
+a.leftarrow{
+    transition: 300ms;
+}
+a.leftarrow:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 0px 10px var(--primarylight);
+}
+
 nav.navbar{
     background-color: var(--primarylight);
     text-align: center;
