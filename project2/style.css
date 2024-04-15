@@ -44,6 +44,15 @@ h2.carousel-caption1 {
 p.carousel-caption2 {
     color: white;  
 }
+div.desc1{
+    padding-top: 5%;
+}
+div.desc2{
+    padding-top: 10%;
+}
+div.desc3{
+    padding-top: 8%;
+}
 p.campaigntitle{
     color: var(--primarycolor);
 }
