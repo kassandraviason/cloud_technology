@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <nav id="navbar-scrollspy" class="navbar navbar-expand-lg fixed-top text-uppercase shadow-sm">
+    <div class="container-fluid mx-4 p-3">
+      <div class="d-flex align-items-start">
+        <a class="navbar-brand fw-bold fs-4 text-light" href="#">Kassandra Viason</a>
+      </div>
+
+      <div class="d-flex navbar-nav nav-pills align-items-end fw-5">
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading1">Home</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading2">About Me</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading3">Education</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading4">Coding Portfolio</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading5">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+
+    <section id="scrollspyHeading1" class="main py-5 border-bottom">
+      <div class="container header">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-4 mt-5 mt-md-0 px-md-5 personimg">
+            <img src="images/person_icon.png" class=" p-1 rounded-circle img-thumbnail" style="width: 350px;"
+              alt="profile image">
+          </div>
+          <div class="col-7 order-first mt-3 px-5" style="text-align: left;">
+            <p class="h2 mb-2 text-dark">Hello there! I am</p>
+            <p class="h1 mb-3" style="color: var(--primarydark);">Kassandra Viason</p>
+            <p class="h5 text-dark mb-3">Take a moment to explore and get to know me better.</p>
+            <button type="button" class="btn btn-custom rounded-5 mt-3 px-3 text-light">Contact Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scrollspyHeading2 py-5 border-bottom" id="scrollspyHeading2">
+      <h1 class="text-center mb-5">About Me</h1>
+      <div class="row mb-5" style="margin: auto; overflow: hidden;">
+        <div class="col-6">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-inner rounded-4">
+              <!-- ITEM 1 -->
+              <div class="carousel-item active">
+                <img src="images/study.jpg" class="d-block w-100">
+              </div>
+              <!-- ITEM 2 -->
+              <div class="carousel-item">
+                <img src="images/graduate.jpg" class="d-block w-100">
+              </div>
+              <!-- ITEM 3 -->
+              <div class="carousel-item">
+                <img src="images/flstudio.jpg" class="d-block w-100">
+              </div>
+              <!-- ITEM 4 -->
+              <div class="carousel-item">
+                <img src="images/3d.jpg" class="d-block w-100">
+              </div>
+              <!-- ITEM 5 -->
+              <div class="carousel-item">
+                <img src="images/videoediting.png" class="d-block w-100">
+              </div>
+              <!-- ITEM 6 -->
+              <div class="carousel-item">
+                <img src="images/bike.jpg" class="d-block w-100">
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 mt-5 g-5" style="text-align: justify;">
+          <p class="h5 mt-4">Hi! I'm Kassandra Viason, and my journey into Computer Science began during my senior year
+            of high school when I enrolled in a computer programming class, where I gained a basic understanding on how
+            to code. That initial exposure has made me very interested to learn more about the tech field. I find the
+            process of coding enjoyable and I am motivated to become an expert and explore job opportunities within the
+            tech industry.</p>
+          <p class="h5 mt-5">Aside from coding, I am also passionate about art. My aim is to learn more about music
+            production, 3d modelling, and photo/video editing. These creative outlets allow me to bring my ideas to life
+            and express myself in unique ways. Also, I spend quality time with my loved ones and enjoy going on walks or
+            bike rides by myself while listening to music to clear my mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scrollspyHeading3 py-5 border-bottom" id="scrollspyHeading3">
+      <h1 class="mb-5">Education</h1>
+      <p class="h5">I'm currently a full-time student at Queensborough Community College, working towards an Associate of Science
+        in Computer Science, with an expected completion date in 2025. Previously, I graduated from Valley Stream
+        Central High School in 2023. My academic aspirations include maintaining a strong GPA, earning an Associate in
+        Science Degree (AS) in Computer Science, and transferring to a four-year college to pursue my Bachelor's Degree.
+      </p>
+    </section>
+
+    <section class="scrollspyHeading4 py-5" id="scrollspyHeading4">
+      <h1>Coding Portfolio</h1>
+      <div class="row m-5">
+        <div class="col-3 p-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              <img src="images/html_icon.png" class="card-img-top p-3" alt="html icon">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text"><span style="text-decoration: underline;">HyperText Markup Language</span> or HTML is
+                the standard markup language for documents designed to be displayed in a web browser.</p>
+              <a href="subwebpages/html.html" class="btn text-light"
+                style="background-color: var(--primarylight);">Click to access</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 p-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              <img src="images/css_icon.png" class="card-img-top p-3" alt="css icon">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text"><span style="text-decoration: underline;">Cascading Style Sheets</span> is a style
+                sheet language used for specifying the presentation and styling of a document written in a markup
+                language such as HTML or XML.</p>
+              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
+                to access</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 p-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              <img src="images/bootstrap_icon.png" class="card-img-top p-3" alt="bootstrap icon">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text"><span style="text-decoration: underline;">Bootstrap</span> is a free and open-source
+                CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and
+                JavaScript-based design templates for typography, forms, buttons, navigation, and other interface
+                components.</p>
+              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
+                to access</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 p-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header">
+              <img src="images/code_icon.png" class="card-img-top p-3" alt="code symbol">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Projects</h5>
+              <p class="card-text"><span style="text-decoration: underline;">Projects</span> Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Impedit, odio consequuntur? Dolorem consequuntur adipisci cum dolores,
+                ipsam vitae? Aut alias expedita neque laudantium ab, fugiat nobis est. Cumque, enim ullam?</p>
+              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
+                to access</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <div class="container" id="scrollspyHeading5">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <small>"Whatever image your mind clings to will tend to replicate itself in your real world.” - Mary
+            Morrissey</small>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
