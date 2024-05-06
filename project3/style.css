@@ -34,7 +34,10 @@ html{ background-color: var(--primarydark); scroll-behavior: smooth; }
 body {
     font-family: "Poppins", sans-serif;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
+
 
 nav {
     background-color: var(--primarydark);
@@ -69,6 +72,33 @@ div.carousel-slide{
     height: 600px; 
     margin: auto; 
     overflow: hidden;
+}
+
+span.underlinefx {
+    position: relative;
+    cursor: pointer;
+}
+
+span.underlinefx::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: var(--primarycolor);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+span.underlinefx:hover::after {
+    transform: scaleX(1);
+}
+
+section.scrollspyHeading3 {
+    background-color: rgb(150,180, 230);
+    margin: 0;
+    padding: 0;
 }
 
 
