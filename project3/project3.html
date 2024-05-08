@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav id="navbar-scrollspy" class="navbar navbar-expand-lg fixed-top text-uppercase shadow-sm">
+  <nav id="navbar-scrollspy" class="navbar navbar-expand-lg fixed-top text-uppercase">
     <div class="container-fluid mx-4 p-3">
       <div class="d-flex align-items-start">
         <a class="navbar-brand fw-bold fs-4 text-light" href="#">Kassandra Viason</a>
@@ -24,8 +24,8 @@
         <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading2">About Me</a>
         <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading3">Education</a>
         <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading4">Work Experience</a>
-        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading6">Coding Portfolio</a>
-        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading6">Contact</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading6">Projects</a>
+        <a class="nav-link px-lg-5 text-light" href="#scrollspyHeading7">Contact</a>
       </div>
     </div>
   </nav>
@@ -54,30 +54,30 @@
       <h1 class="text-center mb-5">About Me</h1>
       <div class="row mb-5" style="margin: auto; overflow: hidden;">
         <div class="col-6">
-          <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner rounded-4">
               <!-- ITEM 1 -->
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="3000">
                 <img src="images/study.jpg" class="d-block w-100">
               </div>
               <!-- ITEM 2 -->
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="images/graduate.jpg" class="d-block w-100">
               </div>
               <!-- ITEM 3 -->
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="images/flstudio.jpg" class="d-block w-100">
               </div>
               <!-- ITEM 4 -->
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="images/3d.jpg" class="d-block w-100">
               </div>
               <!-- ITEM 5 -->
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="images/videoediting.png" class="d-block w-100">
               </div>
               <!-- ITEM 6 -->
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <img src="images/bike.jpg" class="d-block w-100">
               </div>
             </div>
@@ -126,78 +126,173 @@
       <img src="images/workexperience.png" alt="food service icon">
     </section>
 
+    <hr>
 
-    <section class="scrollspyHeading5 py-5" id="scrollspyHeading5">
-      <h1>Coding Portfolio</h1>
-      <div class="row m-5">
-        <div class="col-3 p-4">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              <img src="images/html_icon.png" class="card-img-top p-3" alt="html icon">
+    <!-- ADD A ACCORDION: REVEAL IMPORTANT LISTS -->
+    <section class="scrollspyHeading5 container-fluid py-5" id="scrollspyHeading5">
+      <h1>Projects</h1>
+      <div class="row pt-5">
+
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/html_icon.png" class="img-fluid p-4 rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Informative Website</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Manipulation of basic HTML tags</li>
+                    <li class="list-group-item">Create static layouts using.....</li>
+                    <li class="list-group-item">Understand how to apply CSS properties to images and text....</li>
+                    <li class="list-group-item">Create simple 2d animations using CSS</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/html_icon.png" class="img-fluid p-4 rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Sales Website</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Manipulation of basic HTML tags</li>
+                    <li class="list-group-item">Create static layouts using.....</li>
+                    <li class="list-group-item">Understand how to apply CSS properties to images and text....</li>
+                    <li class="list-group-item">Create simple 2d animations using CSS</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <hr>
+
+    <section class="scrollspyHeading6 pt-5 pb-5" id="scrollspyHeading6">
+      <div class="pb-5">
+        <h1>Skills</h1>
+        <p class="pt-3 fw-medium text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam atque cupiditate sit eaque voluptate cumque ducimus inventore repudiandae nostrum non nihil consequatur odio praesentium, obcaecati, voluptates incidunt sequi animi?</p>
+      </div>
+      
+      <h2 class="text-center pb-4">HTML / CSS</h2>
+      <div class="row row-cols-4 pb-4">   <!-- row-cols-md-4 -->
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/html_icon.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">HTML</h5>
-              <p class="card-text"><span style="text-decoration: underline;">HyperText Markup Language</span> or HTML is
-                the standard markup language for documents designed to be displayed in a web browser.</p>
-              <a href="subwebpages/html.html" class="btn text-light"
-                style="background-color: var(--primarylight);">Click to access</a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
             </div>
           </div>
         </div>
 
-        <div class="col-3 p-4">
+        <div class="col">
           <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              <img src="images/css_icon.png" class="card-img-top p-3" alt="css icon">
-            </div>
+            <img class="card-img-top" src="images/html_icon.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">CSS</h5>
-              <p class="card-text"><span style="text-decoration: underline;">Cascading Style Sheets</span> is a style
-                sheet language used for specifying the presentation and styling of a document written in a markup
-                language such as HTML or XML.</p>
-              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
-                to access</a>
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
             </div>
           </div>
         </div>
 
-        <div class="col-3 p-4">
+        <div class="col">
           <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              <img src="images/bootstrap_icon.png" class="card-img-top p-3" alt="bootstrap icon">
-            </div>
+            <img class="card-img-top " src="images/css_icon.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Bootstrap</h5>
-              <p class="card-text"><span style="text-decoration: underline;">Bootstrap</span> is a free and open-source
-                CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and
-                JavaScript-based design templates for typography, forms, buttons, navigation, and other interface
-                components.</p>
-              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
-                to access</a>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
             </div>
           </div>
         </div>
 
-        <div class="col-3 p-4">
+        <div class="col">
           <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              <img src="images/code_icon.png" class="card-img-top p-3" alt="code symbol">
-            </div>
+            <img class="card-img-top" src="images/css_icon.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Projects</h5>
-              <p class="card-text"><span style="text-decoration: underline;">Projects</span> Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Impedit, odio consequuntur? Dolorem consequuntur adipisci cum dolores,
-                ipsam vitae? Aut alias expedita neque laudantium ab, fugiat nobis est. Cumque, enim ullam?</p>
-              <a href="subwebpages/css.html" class="btn text-light" style="background-color: var(--primarylight);">Click
-                to access</a>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
             </div>
           </div>
         </div>
       </div>
+
+      <h2 class="text-center pb-4">BOOTSTRAP 5</h2>
+      <div class="row row-cols-4">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top p-4" src="images/bootstrap_icon.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Accordion</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, ad soluta voluptatibus consequatur distinctio voluptatum corporis esse aliquam dolorem, numquam fugit culpa nihil. At magni quas nisi distinctio mollitia.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top p-4" src="images/bootstrap_icon.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Collapsible</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, ad soluta voluptatibus consequatur distinctio voluptatum corporis esse aliquam dolorem, numquam fugit culpa nihil. At magni quas nisi distinctio mollitia.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top p-4" src="images/bootstrap_icon.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Collapsible</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, ad soluta voluptatibus consequatur distinctio voluptatum corporis esse aliquam dolorem, numquam fugit culpa nihil. At magni quas nisi distinctio mollitia.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top p-4" src="images/bootstrap_icon.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Collapsible</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti blanditiis, ad soluta voluptatibus consequatur distinctio voluptatum corporis esse aliquam dolorem, numquam fugit culpa nihil. At magni quas nisi distinctio mollitia.</p>
+              <a href="#" class="btn btn-primary">Explore .... </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </section>
 
     <hr>
-    <div class="container" id="scrollspyHeading6">
+
+    <div class="container contact" id="scrollspyHeading7">
       <footer class="py-5">
         <div class="row">
           <div class="col-6 col-md-2 mb-3">
