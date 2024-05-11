@@ -19,17 +19,19 @@
 .poppins-black {font-family: "Poppins", sans-serif; font-weight: 900; font-style: normal;}
 .poppins-black-italic {font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic;}
 
-*{box-sizing: border-box; padding: 0; margin: 0;}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
 
-html{ background-color: var(--primarydark); scroll-behavior: smooth; }
+html{ /* background-color: var(--primarydark); */ scroll-behavior: smooth; }
 
 :root{
     --primarylight: #5072a7;
     --primarycolor: #206ada;
     --primarydark: #004170;
 }
-
-/* -- */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -38,40 +40,55 @@ body {
     padding: 0;
 }
 
+/* SCROLLSPY YOUTUBE TUT */
+.section {
+    width: 100%;
+    height: 100%; /* should be 100vh (TESTING) */
+    display: flex;
+    color: black;
+}
+.section:nth-child(odd) {
+    background-color: rgb(150,180, 230);
+}
+.section:nth-child(even) {
+    background-color: white;
+}
 
-nav {
+/* for navbar background color */
+.bg {
     background-color: var(--primarydark);
+}
+
+@media(max-width:767px) {
+    .ul-bg {
+        background-color: var(--primarylight);
+    }
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ---------------------------- */
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 h1 {
+    font-size: 50px;
     margin-top: 0;
     color: var(--primarydark);
-    text-align: center;
 }
 
-section.main {
-    /*background-image: url(images/bluebg.png); */
-    background-color: rgb(150,180, 230);
-    margin-top: 0;
-    margin-right: -0.85%;
-    margin-left: -1%;
-}
-
-button.btn-custom {
+a.btn-custom {
     background-color: var(--primarydark);
     color: white;
 }
 
-button.btn-custom:hover {
+a.btn-custom:hover {
     background-color: var(--primarycolor);
     color: white;
-}
-
-div.carousel-slide{
-    width: fit-content; 
-    height: 600px; 
-    margin: auto; 
-    overflow: hidden;
 }
 
 span.underlinefx {
@@ -95,18 +112,51 @@ span.underlinefx:hover::after {
     transform: scaleX(1);
 }
 
-section.scrollspyHeading3 {
-    background-color: rgb(150,180, 230);
-    margin: 0;
-    padding: 0;
-}
-
-
 div.card {
     transition: 300ms;
 }
 
 div.card:hover {
     transform: scale(1.05);
-    box-shadow: 10px 15px 10px rgb(80, 114, 167);
+    box-shadow: 10px 15px 10px #206ada;
+}
+
+/* image hover overlay slide - bottom to top */
+
+div.imgcontainer {
+    position: relative;
+}
+
+div.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.overlay {
+    position: absolute;
+    border-radius: 60px 60px 0px 0px;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    width: 94%;
+    height:0;
+    transition: .5s ease;
+}
+
+.imgcontainer:hover .overlay {
+    height: 100%;
+}
+
+h2.textoverlay {
+    width: 100%;
+    margin-top: 10%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transform: rotate(-5deg)skewX(-5deg);
 }
