@@ -75,6 +75,13 @@ body {
     padding: 0 !important;
 }
 
+
+/* ROW FLEX */
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1 {
     font-size: 50px;
     margin-top: 0;
