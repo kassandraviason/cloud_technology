@@ -88,6 +88,8 @@ h1 {
     color: var(--primarydark);
 }
 
+/* BUTTONS */
+
 a.btn-custom {
     background-color: var(--primarydark);
     color: white;
@@ -97,6 +99,18 @@ a.btn-custom:hover {
     background-color: var(--primarycolor);
     color: white;
 }
+
+a.btn-custom1 {
+    background-color: var(--primarycolor);
+    color: white;
+}
+
+a.btn-custom1:hover {
+    background-color: var(--primarydark);
+    color: white;
+}
+
+/* ------------ */
 
 span.underlinefx {
     position: relative;
@@ -158,6 +172,13 @@ h2.textoverlay {
     font-family: 'Poppins', sans-serif;
     transform: rotate(-5deg)skewX(-5deg);
 }
+
+/* WORK EXPERIENCE SECTION */
+
+
+
+/* vertical spacing between columns */
+
 
 /* CARDS */
 
