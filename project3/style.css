@@ -205,7 +205,6 @@ a.card-link:hover {
     color: var(--primarycolor);
 }
 
-
 .modal-style1 {
     width: 190px;
     height: 254px;
@@ -213,6 +212,8 @@ a.card-link:hover {
     background: #e0e0e0;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
+
+/* */
 
 .newcard {
     width: 350px;
@@ -243,6 +244,7 @@ a.card-link:hover {
     position: absolute;
     padding: 30px 20px 20px 20px;
     height: auto;
+    top: 30%;
     bottom: 0;
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
     background: linear-gradient(transparent, rgba(0, 0, 0, 1));   
